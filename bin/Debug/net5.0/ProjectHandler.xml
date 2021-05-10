@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProjectHandler</name>
+    </assembly>
+    <members>
+        <member name="M:ProjectHandler.Controllers.ProjectController.Get">
+            <summary>
+            Get all projects
+            </summary>
+            <response code="200">Returns all projects from database</response>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectHandler.Controllers.ProjectController.GetByFilter(System.DateTime,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Get projects by given filter
+            </summary>
+            <param name="date"></param>
+            <param name="priority"></param>
+            <param name="sort"></param>
+            <param name="order"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectHandler.Controllers.ProjectController.GetAllTasksInProject(System.Int32)">
+            <summary>
+            Get all tasks for given project Id
+            </summary>
+            <param name="ProjectId"></param>
+            <response code="200">Returns all tasks from database for single project</response>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectHandler.Controllers.ProjectController.Get(System.Int32)">
+            <summary>
+            Get single project for given Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectHandler.Controllers.ProjectController.Post(ProjectHandler.Models.Project)">
+            <summary>
+            Create new project
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectHandler.Controllers.ProjectController.Put(ProjectHandler.Models.Project)">
+            <summary>
+            Update\change existing project informations
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectHandler.Controllers.ProjectController.Delete(System.Int32)">
+            <summary>
+            Delete project by given Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectHandler.Controllers.TaskController.Get">
+            <summary>
+            Get all tasks
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectHandler.Controllers.TaskController.Get(System.Int32)">
+            <summary>
+            Get single task by Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectHandler.Controllers.TaskController.Post(ProjectHandler.Models.Task)">
+            <summary>
+            Create new task for existing project
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectHandler.Controllers.TaskController.Put(ProjectHandler.Models.Task)">
+            <summary>
+            Update\change existing task informations
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectHandler.Controllers.TaskController.Delete(System.Int32)">
+            <summary>
+            Delete task by given Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
